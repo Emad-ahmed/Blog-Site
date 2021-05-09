@@ -1,0 +1,41 @@
+{% extends 'blog/base.htm' %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="col-sm-10">
+<h3 class="text-white my-5">Contact Page</h3>
+
+<form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Your Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Your Email</label>
+                        <input type="email" class="form-control" id="inputEmail" required />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="inputSubject">Your Subject</label>
+                        <input type="email" class="form-control" id="inputSubject" required />
+                    </div>
+
+                    <div class="form-group mb-3 col-md-12">
+                        <label for="inputTextarea">Your Message *</label>
+                        <textarea class="form-control form-control-sm" name="" id="inputTextarea" cols="10" rows="10" required ></textarea>
+                    </div>
+                    <div class="text-center w-100">
+                    <button class="btn btn-primary" type="submit">Send</button>
+                </div>
+                </div>
+            </form>
+
+
+
+
+{% endblock content %}
+
